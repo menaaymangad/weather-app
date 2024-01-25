@@ -10,7 +10,7 @@ class WeatherService {
   WeatherService(this.dio);
   final String baseUrl = 'https://api.openweathermap.org';
 
-  final String apiKey = 'e40099f11e03965cba9aefcd2e5bc6cd';
+  final String apiKey = 'apiKey';
   /* we return future method because we wait to recieve data from the server.
      but we make a method type is weather model to use it for show data in UI Screen*/
   Future<WeatherModel> getWeather({required String cityName}) async {
